@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "joueurs",
+  "info": {
+    "singularName": "joueur",
+    "pluralName": "joueurs",
+    "displayName": "Joueur"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "classement": {
+      "type": "string"
+    },
+    "matches_as_joueur1": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::match.match",
+      "mappedBy": "joueur1"
+    },
+    "matches_as_joueur2": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::match.match",
+      "mappedBy": "joueur2"
+    }
+  }
+}
