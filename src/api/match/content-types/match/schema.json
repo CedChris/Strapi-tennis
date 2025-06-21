@@ -23,6 +23,17 @@
       "target": "api::joueur.joueur",
       "inversedBy": "matches_as_joueur2"
     },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "SM",
+        "SM 35",
+        "SM 45",
+        "SM 55",
+        "DM",
+        "SD"
+      ]
+    },
     "date": {
       "type": "datetime"
     },
